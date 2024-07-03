@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sass": "sass ./src/scss/styles.scss ./public/css/styles.css",
+    "sass-w": "sass --watch ./src/scss/styles.scss ./public/css/styles.css"
   },
   "dependencies": {
     "react": "^18.3.1",
