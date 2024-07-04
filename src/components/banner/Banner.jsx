@@ -1,10 +1,10 @@
 const Banner = () => {
   return (
     <div
-      className="relative items-center justify-center h-100 bg-cover bg-center"
+      className="relative items-center justify-center h-auto py-6 bg-cover bg-stone-600 bg-center"
       style={{ backgroundImage: "url(./src/assets/images/banner.png)" }}
     >
-      <div className="relative text-center h-100 text-white">
+      <div className="relative text-center h-100 text-white ">
         <h1 className="text-3xl text-center h-100 text-white md:text-6xl font-bold mb-4">
           {" "}
           AirCare
