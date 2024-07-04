@@ -1,31 +1,30 @@
 import axios from "axios";
+
+const baseURL = "http://localhost:8080/api/Air";
+
+export const TaskDataServices = {
 const baseURL = "http://localhost:8080/api";
 export const TaskDataServices = {
 
     getAllAir() {
-        const Air = axios.get(baseURL + "/Air").then(res => res.data);
-        return Air;
+        return axios.get(`${baseURL}/Air`).then(res => res.data);
     },
 
     getAirById(id) {
-        const AirById = axios.get(baseURL + "/Air/"+id).then(res => res.data);
-        return AirById;
+        return axios.get(`${baseURL}/Air/${id}`).then(res => res.data);
     },
 
-    getAirBySearch(search){
-        const AirBySearch = axios.get(baseURL + `/Air?search=${search}`).then(res => res.data);
-        return AirBySearch;
-    },    
+    getAirBySearch(search) {
+        return axios.get(`${baseURL}/Air?search=${search}`).then(res => res.data);
+    },
 
-    getFavoriteAir(){
-        const favAir = axios.get(baseURL + "/Air").then(res => res.data
-            .filter(Air => Air.isFavorite === true));
-        return favAir;
-    },    
+    getFavoriteAir() {
+        return axios.get(`${baseURL}/Air`).then(res => 
+            res.data.filter(Air => Air.isFavorite === true)
+        );
+    },
 
-    updateAir(id, data){
-        const updatedAir = axios.put(baseURL + `/Air/${id}`, data).then(res => res.data);
-        return updatedAir;
-
+    updateAir(id, data) {
+        return axios.put(`${baseURL}/Air/${id}`, data).then(res => res.data);
     }
-}
+};
