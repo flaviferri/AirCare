@@ -21,7 +21,7 @@ const Navbar = () => {
             <li>Help</li>
             <li>
               <NavLink className="navLink" to="/map">
-                Map
+                Search
               </NavLink>
             </li>
           </ul>
