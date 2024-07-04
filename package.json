@@ -9,7 +9,8 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "sass": "sass ./src/scss/styles.scss ./public/css/styles.css",
-    "sass-w": "sass --watch ./src/scss/styles.scss ./public/css/styles.css"
+    "sass-w": "sass --watch ./src/scss/styles.scss ./public/css/styles.css",
+    "watch": "tailwindcss -i ./src/styles.css -o ./src/output.css --watch"
   },
   "dependencies": {
     "axios": "^1.7.2",
