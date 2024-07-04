@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./public/css/styles.css";
 
 const Cards = (title, content) => {
