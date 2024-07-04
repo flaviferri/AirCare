@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const appInfo = "https://api.waqi.info/feed/";
 const token = "29814c6e83c60b9a6a16c7b6edad9b455ba84c98"; 
