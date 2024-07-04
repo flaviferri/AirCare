@@ -7,11 +7,16 @@ import  Cards  from "../../components/cards/Cards";
 
 const Home = () => {
   return (
-    
+    <>
+    <Navbar/>
+    <Banner/>
     <div class="container">
-      <img src="./../../../src/assets/images/Logo.jpg" alt="AirCare Logo"/>
+      <img src="./../../../src/assets/images/viento.png" alt="AirCare Logo"/>
       <h1>AirCare</h1>
     </div>
+    <Cards/>
+    <Footer/>
+    </>
   );
 };
 
