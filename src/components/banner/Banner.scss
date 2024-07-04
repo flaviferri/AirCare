@@ -1,0 +1,8 @@
+@import url(./../../scss/variables.scss);
+
+.Banner {
+    background-image: url(./src/assets/images/banner.jpg);
+    background-size: cover;
+    background-repeat: no repeat;
+    height: 200px;
+}
