@@ -1,0 +1,96 @@
+@import '/src/scss/styles.scss';
+
+.container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    margin-bottom: 20px;
+  
+    .timeTitle {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    .timeTitle::shadow{
+        color: #0056b3;
+    }
+  }
+  
+  .searchField {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    .searchLabel {
+      margin-right: 10px;
+      font-weight: bold;
+    }
+  
+    input[type="text"] {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    button {
+      margin-left: 10px;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  
+  .airQualityInfo {
+    h4 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #007bff;
+    }
+  
+    p {
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 4px;
+      color: white;
+  
+      &:nth-child(1) {
+        background-color: #28a745; // Green for AQI
+      }
+  
+      &:nth-child(2) {
+        background-color: #ffc107; // Yellow for PM2.5
+      }
+  
+      &:nth-child(3) {
+        background-color: #17a2b8; // Blue for PM10
+      }
+  
+      &:nth-child(4) {
+        background-color: #fd7e14; // Orange for O3
+      }
+  
+      &:nth-child(5) {
+        background-color: #dc3545; // Red for NO2
+      }
+    }
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }

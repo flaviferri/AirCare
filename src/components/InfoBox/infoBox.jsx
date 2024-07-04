@@ -1,4 +1,6 @@
 import  { useState } from 'react';
+import './InfoBox.scss'
+
 const appInfo = "https://api.waqi.info/feed/";
 const token = "29814c6e83c60b9a6a16c7b6edad9b455ba84c98"; 
 
@@ -25,7 +27,7 @@ const InfoBox = () => {
     return (
         <div className="container">
             <div className="title">
-                <h3>Real-time Air Quality Index (AQI)</h3>
+                <h3 className="timeTitle">Real-time Air Quality Index (AQI)</h3>
             </div>
             <div className="searchField">
                 <label htmlFor="search" className="searchLabel">Enter city name:</label>

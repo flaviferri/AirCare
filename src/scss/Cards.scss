@@ -1,25 +1,18 @@
 .ContainerCards {
-    background-color: $Beige;
     width: 100%;
     height: auto;
     
 
     .Cards {
-background-color: $Whitesmoke;
 width: 30%;
 border-radius: 6px;
 
 h2 {
-    font-family: $Poppins;
     font-size: 2rem;
-    color: $Prussian;
-
     
 }
 p { 
-    font-family: $Poppins;
     font-size: 1rem;
-    color: $Indigo;
 }
     }
 }
