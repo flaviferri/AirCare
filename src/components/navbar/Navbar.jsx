@@ -3,7 +3,7 @@ import "./Navbar.scss";
 
 const Navbar = () => {
   return (
-    <>
+    <> 
       <nav className="navbarHome">
         <div className="logoNavbar">
           <img src="src/assets/images/viento.png" alt="logo" />
@@ -11,7 +11,11 @@ const Navbar = () => {
         </div>
         <div className="navLinks">
           <ul className="navbarItems">
-            <li>Home</li>
+            <li>
+              <NavLink className="navLinkHome" to="/">
+                Home
+              </NavLink>
+            </li>
             <li>Contact</li>
             <li>About</li>
             <li>Help</li>
