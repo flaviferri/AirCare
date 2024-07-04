@@ -11,7 +11,10 @@
     "preview": "vite preview",
     "sass": "sass ./src/scss/styles.scss ./public/css/styles.css",
     "sass-w": "sass --watch ./src/scss/styles.scss ./public/css/styles.css",
-    "watch": "tailwindcss -i ./src/styles.css -o ./src/output.css --watch"
+    "watch": "tailwindcss -i ./src/styles.css -o ./src/output.css --watch",
+    "test-w": "vitest",
+    "test:unit": "vitest --environment jsdom",
+    "test-cover": "vitest run --coverage"
   },
   "dependencies": {
     "axios": "^1.7.2",
@@ -21,6 +24,8 @@
     "react-router-dom": "^6.24.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
@@ -28,8 +33,10 @@
     "eslint-plugin-react": "^7.34.2",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "jsdom": "^24.1.0",
     "sass": "^1.77.6",
     "tailwindcss": "^3.4.4",
-    "vite": "^5.3.1"
+    "vite": "^5.3.1",
+    "vitest": "^1.6.0"
   }
 }
