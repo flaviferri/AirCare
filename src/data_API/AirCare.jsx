@@ -1,31 +1,28 @@
 import axios from "axios";
-const baseURL = "http://localhost:8080";
-export const motoServices = {
 
-    getAllMotos() {
-        const motos = axios.get(baseURL + "/motos").then(res => res.data);
-        return motos;
+const baseURL = "http://localhost:8080/api/Air";
+
+export const TaskDataServices = {
+
+    getAllAir() {
+        return axios.get(`${baseURL}/Air`).then(res => res.data);
     },
 
-    getMotoById(id) {
-        const motoById = axios.get(baseURL + "/motos/"+id).then(res => res.data);
-        return motoById;
+    getAirById(id) {
+        return axios.get(`${baseURL}/Air/${id}`).then(res => res.data);
     },
 
-    getMotosBySearch(search){
-        const motosBySearch = axios.get(baseURL + `/motos?search=${search}`).then(res => res.data);
-        return motosBySearch;
-    },    
+    getAirBySearch(search) {
+        return axios.get(`${baseURL}/Air?search=${search}`).then(res => res.data);
+    },
 
-    getFavoriteMotos(){
-        const favMotos = axios.get(baseURL + "/motos").then(res => res.data
-            .filter(moto => moto.isFavorite === true));
-        return favMotos;
-    },    
+    getFavoriteAir() {
+        return axios.get(`${baseURL}/Air`).then(res => 
+            res.data.filter(Air => Air.isFavorite === true)
+        );
+    },
 
-    updateMoto(id, data){
-        const updatedMoto = axios.put(baseURL + `/motos/${id}`, data).then(res => res.data);
-        return updatedMoto;
-
+    updateAir(id, data) {
+        return axios.put(`${baseURL}/Air/${id}`, data).then(res => res.data);
     }
-}
+};
