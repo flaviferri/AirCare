@@ -1,15 +1,15 @@
-import "./../../../public/css/styles.css"
+import "./../../../public/css/styles.css";
 import "./Home.scss";
 import  Banner  from "../../components/banner/Banner";
 import  Cards  from "../../components/cards/Cards";
 
 const Home = () => {
   return (
-    <>
-    <Banner></Banner>
-    <Cards></Cards>
-      <h1>Hola soy la Home</h1>
-    </>
+    
+    <div class="container">
+      <img src="./../../../src/assets/images/Logo.jpg" alt="AirCare Logo"/>
+      <h1>AirCare</h1>
+    </div>
   );
 };
 
