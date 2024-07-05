@@ -3,8 +3,7 @@ import axios from "axios";
 const baseURL = "http://localhost:8080/api/Air";
 
 export const TaskDataServices = {
-const baseURL = "http://localhost:8080/api";
-export const TaskDataServices = {
+const baseURL = "http://localhost:8080/api" = {
 
     getAllAir() {
         return axios.get(`${baseURL}/Air`).then(res => res.data);
@@ -27,4 +26,5 @@ export const TaskDataServices = {
     updateAir(id, data) {
         return axios.put(`${baseURL}/Air/${id}`, data).then(res => res.data);
     }
+}
 };
