@@ -6,7 +6,7 @@ import InfoBox from "../components/InfoBox/infoBox"
 
 export const router = createBrowserRouter([
   {
-    path: "/Home",
+    path: "/",
     element: <Home />,
   },
   {
